@@ -4,11 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Google Homepage</title>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
 		<nav id="navbar">
-			<ul>
+			<ul id="navList1">
 				<li>
 					<a href="#">About</a>
 				</li>
@@ -16,7 +20,7 @@
 					<a href="#">Store</a>
 				</li>
 			</ul>
-			<ul>
+			<ul id="navList2">
 				<li>
 					<a href="#">Gmail</a>
 				</li>
@@ -24,35 +28,39 @@
 					<a href="#">Images</a>
 				</li>
 				<li>
-					<a href="#">...</a>
+					<span class="material-icons"> apps </span>
 				</li>
 				<li>
-					<a href="#">
-						<img src="" alt="User avatar" />
-					</a>
+					<button>Sign In</button>
 				</li>
 			</ul>
 		</nav>
 		<main>
 			<header>
 				<img
+					id="google-logo"
 					src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
 					alt="Google Logo"
 				/>
 			</header>
-			<form>
-				<input type="text" name="searchbar" id="searchbar" />
+			<form id="search-form">
+				<div id="searchbar">
+					<span class="material-icons"> search </span>
+
+					<input type="text" name="searchbar" id="searchbar-input" />
+
+					<span class="material-icons"> mic </span>
+				</div>
 
 				<div>
-					<button type="submit">Google Search</button>
-					<button type="button">I'm Feeling Lucky</button>
+					<input type="submit" value="Google Search" class="search-btns" />
+					<input type="button" value="I'm Feeling Lucky" class="search-btns" />
 				</div>
 			</form>
 		</main>
 		<footer id="footer">
-			<p>Carbon neutral since 2007</p>
 			<div>
-				<ul>
+				<ul id="footerList1">
 					<li>
 						<a href="#">Advertising</a>
 					</li>
@@ -63,7 +71,7 @@
 						<a href="#">How Search works</a>
 					</li>
 				</ul>
-				<ul>
+				<ul id="footerList2">
 					<li>
 						<a href="#">Privacy</a>
 					</li>
