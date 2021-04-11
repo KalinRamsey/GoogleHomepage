@@ -155,6 +155,10 @@ main {
 		margin-right: 30px;
 	}
 
+	#searchbar {
+		max-width: 480px;
+	}
+
 	#footer div {
 		flex-direction: row;
 	}
